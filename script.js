@@ -62,9 +62,9 @@ const memoryData = [
         img: "./fotos/foto9.jpg" 
     },
     { 
-        title: "Nuestro Reflejo en el Cielo ✨", 
-        text: "En el Salar de Uyuni, donde el cielo se une con la tierra, entendí que lo nuestro es infinito. Caminar contigo sobre ese espejo blanco, sintiendo que tocábamos las estrellas juntos, es el recuerdo más mágico de mi vida. Eres mi universo entero, Jael. ¡Felices 3 años de parte de tu Moisés!", 
-        img: "./fotos/foto10.jpg" 
+    title: "Nuestro Reflejo en el Cielo ✨", 
+    text: "En el Salar de Uyuni, donde el cielo se une con la tierra, entendí que lo nuestro es infinito...", 
+    img: "./fotos/foto10.JPG" // <-- Ponlo así, con JPG en mayúsculas
     }
 ];
 
