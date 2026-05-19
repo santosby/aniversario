@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jael & Moisés: Nuestro Universo 🌌</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="anniversary-badge" class="hidden-ui">
+        <span class="sparkle">✨</span> JAEL Y MOISÉS • 19/05/2023 ➔ 19/05/2026 <span class="sparkle">✨</span>
+    </div>
+
+    <div id="welcome-screen">
+        <div class="welcome-content">
+            <h1 class="anniversary-title">JAEL Y MOISÉS</h1>
+            <h2 class="three-years-text">FELIZ ANIVERSARIO</h2>
+            <h3 class="date-subtitle">3 AÑOS DE AMOR (19/05/2023 - 19/05/2026)</h3>
+            <img src="./fotos/botas.jpg" alt="Portada" class="welcome-gif">
+            <p></p>
+            <button id="btn-start">INICIAR VIAJE</button>
+        </div>
+    </div>
+
+    <div id="canvas-container"></div>
+
+    <div id="message-modal" class="modal-hidden">
+        <div class="modal-content">
+            <div class="heart-icon-top">♥</div>
+            <div class="image-wrapper">
+                <img id="modal-img" src="" alt="Recuerdo">
+            </div>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+            <button id="btn-close">VOLVER AL CIELO ✦</button>
+        </div>
+    </div>
+
+    <audio id="bg-music" src="./musica/roma.mp3" loop></audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

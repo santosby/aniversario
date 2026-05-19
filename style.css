@@ -1,0 +1,64 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body, html { width: 100%; height: 100%; overflow: hidden; background-color: #020005; font-family: 'Georgia', serif; color: #ffffff; }
+
+/* INSIGNIA SUPERIOR FLOTANTE */
+#anniversary-badge {
+    position: fixed;
+    top: 25px;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    color: #ffd700; /* Dorado brillante */
+    text-shadow: 0 0 10px #ff1493, 0 0 20px #8a2be2;
+    font-weight: bold;
+    transition: opacity 2s;
+}
+
+.hidden-ui { opacity: 0; pointer-events: none; }
+
+/* PANTALLA DE BIENVENIDA */
+#welcome-screen {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle, #150221 0%, #000000 100%);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 10; transition: opacity 1.5s;
+}
+
+.welcome-content { text-align: center; padding: 20px; }
+.anniversary-title { font-size: 3.5rem; letter-spacing: 8px; margin-bottom: 5px; color: #fff; text-shadow: 0 0 20px #ff1493; }
+.three-years-text { font-size: 2.2rem; color: #ff1493; margin-bottom: 5px; letter-spacing: 4px; text-shadow: 0 0 15px #ff1493; }
+.date-subtitle { font-size: 1.1rem; color: #00ffcc; margin-bottom: 25px; font-family: 'Arial', sans-serif; letter-spacing: 2px; text-shadow: 0 0 8px #00ffcc; }
+
+.welcome-gif { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; border: 3px solid #ff1493; margin-bottom: 25px; box-shadow: 0 0 25px #ff1493; }
+
+#btn-start {
+    padding: 15px 50px; font-size: 1.2rem; color: #fff;
+    background: linear-gradient(45deg, #ff1493, #8a2be2);
+    border: none; border-radius: 30px; cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 20, 147, 0.6); transition: 0.3s;
+    letter-spacing: 2px;
+}
+#btn-start:hover { transform: scale(1.05); box-shadow: 0 0 40px #ff1493; }
+
+/* MODAL / TARJETA */
+#message-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); display: flex; justify-content: center; align-items: center; z-index: 20; transition: 0.5s; }
+.modal-hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+.modal-content { 
+    background: rgba(15, 2, 25, 0.98); width: 90%; max-width: 480px; padding: 35px; 
+    border-radius: 25px; border: 1px solid #ff1493; text-align: center;
+    box-shadow: 0 0 40px rgba(255, 20, 147, 0.4);
+}
+
+.image-wrapper { width: 190px; height: 190px; margin: 0 auto 20px; border-radius: 50%; overflow: hidden; border: 3px solid #ff1493; box-shadow: 0 0 15px #ff1493; }
+.image-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+#modal-title { color: #00ffcc; margin-bottom: 15px; font-size: 1.6rem; text-shadow: 0 0 5px #00ffcc; }
+#modal-text { font-family: 'Arial', sans-serif; line-height: 1.6; color: #f0f0ff; font-size: 1.05rem; }
+
+#btn-close { margin-top: 25px; padding: 10px 30px; background: transparent; border: 1px solid #ff1493; color: #ff1493; border-radius: 20px; cursor: pointer; transition: 0.3s; }
+#btn-close:hover { background: #ff1493; color: #fff; box-shadow: 0 0 15px #ff1493; }
+
+@keyframes sparkle { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+.sparkle { animation: sparkle 1.2s infinite; }
