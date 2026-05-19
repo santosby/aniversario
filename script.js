@@ -61,11 +61,11 @@ const memoryData = [
         text: "Por todas las risas compartidas, nuestros secretos y el apoyo incondicional que nos damos en cada paso.", 
         img: "./fotos/foto9.jpg" 
     },
-    { 
+   { 
     title: "Nuestro Reflejo en el Cielo ✨", 
-    text: "En el Salar de Uyuni, donde el cielo se une con la tierra, entendí que lo nuestro es infinito...", 
-    img: "./fotos/foto10.JPG" // <-- Ponlo así, con JPG en mayúsculas
-    }
+    text: "En el Salar de Uyuni, donde el cielo se une con la tierra...", 
+    img: "./fotos/foto10.jpg" // <-- Asegúrate de que esté en minúsculas (.jpg)
+}
 ];
 
 // ASIGNACIÓN DE BOTONES E INTERFAZ HTML
